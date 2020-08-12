@@ -144,6 +144,7 @@ class ViewController: UIViewController  , SettingFillterDelegate {
             
             if let safeCheckedBox   =   isCheckedBox {
                 destinationVc.boolCheckedBox    =   safeCheckedBox
+                
             }
         }
     }

@@ -80,6 +80,7 @@ class SettingViewController: UIViewController  {
             
             let count : Int = checkBoxs.firstIndex(of: checkbox)!
             
+            
             switch (count){
                 
             case 0:
