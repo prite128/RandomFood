@@ -12,7 +12,7 @@ import SimpleCheckbox
 
 protocol SettingFillterDelegate {
     
-    func didUpdateFillter( urlFillter: String)
+    func didUpdateFillter( urlFillter: String , isCheckedBox : [Int])
 }
 
 
@@ -35,6 +35,9 @@ class SettingViewController: UIViewController  {
     
     var urlString : [String] = []
     
+    var boolCheckedBox  : [Int]?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -50,20 +53,32 @@ class SettingViewController: UIViewController  {
         
         let checkBoxs   :[Checkbox] =   [checkboxThai,checkboxJapan,checkboxChiness,checkboxNoodle,checkboxByOrder,checkboxFastFood,checkboxSigleMeal,checkBoxCleanFood]
         
-        
+        var countIsChecked : Int =   0
         
         checkBoxs.forEach { (checkbox) in
             
+            if let safeBoolCheckedBox   =   boolCheckedBox{
+                
+//                print("in safe if ")
+//                print("countIsChecked : \(countIsChecked)")
+//                print("safeBoolCheckedBox[countIsChecked] : \(safeBoolCheckedBox[countIsChecked])")
+                
+                if  safeBoolCheckedBox[countIsChecked]   == countIsChecked {
+                    
+                    checkbox.isChecked  =   true
+                }
+            }
+            
             urlString.append("")
-//            checkbox.isChecked  =   true
+            
             checkbox.checkedBorderColor = .green
             checkbox.uncheckedBorderColor = .black
             checkbox.borderStyle = .square
             checkbox.checkmarkStyle = .tick
             
-            print(checkBoxs.firstIndex(of: checkbox)!)
+//            print(checkBoxs.firstIndex(of: checkbox)!)
             
-            var count : Int = checkBoxs.firstIndex(of: checkbox)!
+            let count : Int = checkBoxs.firstIndex(of: checkbox)!
             
             switch (count){
                 
@@ -94,7 +109,7 @@ class SettingViewController: UIViewController  {
                 break
             case 2:
                 checkbox.valueChanged = { (isChecked) in
-                  
+                    
                     
                     if isChecked {
                         self.urlString[count]    =   "categories=4"
@@ -106,7 +121,7 @@ class SettingViewController: UIViewController  {
                 break
             case 3:
                 checkbox.valueChanged = { (isChecked) in
-                   
+                    
                     
                     if isChecked {
                         self.urlString[count]    =   "categories=30"
@@ -132,7 +147,7 @@ class SettingViewController: UIViewController  {
                 break
             case 5:
                 checkbox.valueChanged = { (isChecked) in
-                  
+                    
                     
                     if isChecked {
                         self.urlString[count]    =   "categories=28"
@@ -145,7 +160,7 @@ class SettingViewController: UIViewController  {
                 break
             case 6:
                 checkbox.valueChanged = { (isChecked) in
-                   
+                    
                     
                     if isChecked {
                         self.urlString[count]    =   "categories=64"
@@ -159,7 +174,7 @@ class SettingViewController: UIViewController  {
                 
             case 7:
                 checkbox.valueChanged = { (isChecked) in
-                   
+                    
                     
                     if isChecked {
                         self.urlString[count]    =   "categories=39"
@@ -176,6 +191,7 @@ class SettingViewController: UIViewController  {
                 
             }
             
+            countIsChecked += 1
         }
         
     }
@@ -186,25 +202,24 @@ class SettingViewController: UIViewController  {
         var count : Int = 0
         
         var url : String = ""
+        
+        var isCheckedBox : [Int]    =   []
         urlString.forEach { (string) in
+            
             
             if !string.isEmpty {
                 
-                //                print(string)
-                //                if count >= 1 {
-                //                    url += "&\(string)"
-                //                }
-                //                else if count == 0 {
-                //
-                //                    url += string
-                //                    count += 1
-                //
-                //                }
+                isCheckedBox.append(count)
                 url += "&\(string)"
             }
+            else{
+                isCheckedBox.append(-1)
+            }
+            
+            count += 1
         }
         
-        delegate?.didUpdateFillter(urlFillter: url)
+        delegate?.didUpdateFillter(urlFillter: url , isCheckedBox: isCheckedBox)
         
         print(url)
     }

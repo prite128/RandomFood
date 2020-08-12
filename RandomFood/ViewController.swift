@@ -22,6 +22,7 @@ class ViewController: UIViewController  , SettingFillterDelegate {
     var shopNames   : [String]  =   []
     @IBOutlet weak var shopLabel: UILabel!
     
+    var isCheckedBox: [Int]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,9 +41,9 @@ class ViewController: UIViewController  , SettingFillterDelegate {
         
         print("before button pressed ")
         print("array count :  \(shopNames.count)")
-//        shopNames.forEach { (name) in
-//            print(name)
-//        }
+        //        shopNames.forEach { (name) in
+        //            print(name)
+        //        }
         
         let randomElementInArray = Int(arc4random_uniform(UInt32(shopNames.count)))
         
@@ -60,16 +61,16 @@ class ViewController: UIViewController  , SettingFillterDelegate {
         print(lat)
         print(long)
         
-//        for i in 1...2 {
-//
-            let url = URL(string: "https://www.wongnai.com/businesses?spatialInfo.radius=50.0&spatialInfo.coordinate.latitude=\(lat)&spatialInfo.coordinate.longitude=\(long)&categoryGroupId=9&features.ratingRange=1\(fillter)&page.number=1&rerank=false&domain=1")!
-
-            print(url)
-
-
-            fetchDataFromUrl(url: url)
-//
-//        }
+        //        for i in 1...2 {
+        //
+        let url = URL(string: "https://www.wongnai.com/businesses?spatialInfo.radius=50.0&spatialInfo.coordinate.latitude=\(lat)&spatialInfo.coordinate.longitude=\(long)&categoryGroupId=9&features.ratingRange=1\(fillter)&page.number=1&rerank=false&domain=1")!
+        
+        print(url)
+        
+        
+        fetchDataFromUrl(url: url)
+        //
+        //        }
         
         
         
@@ -120,9 +121,11 @@ class ViewController: UIViewController  , SettingFillterDelegate {
         
     }
     
-    func didUpdateFillter(urlFillter: String) {
+    func didUpdateFillter(urlFillter: String  , isCheckedBox: [Int] ) {
         
         passUrl(with: urlFillter)
+        
+        self.isCheckedBox   =   isCheckedBox
         
     }
     
@@ -138,6 +141,10 @@ class ViewController: UIViewController  , SettingFillterDelegate {
             let destinationVc   =   segue.destination as! SettingViewController
             
             destinationVc.delegate  =   self
+            
+            if let safeCheckedBox   =   isCheckedBox {
+                destinationVc.boolCheckedBox    =   safeCheckedBox
+            }
         }
     }
 }
