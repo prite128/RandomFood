@@ -3,19 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A9E16325A9C008C96914299 /* Pods_RandomFood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 720460AC8953446B5F99E78B /* Pods_RandomFood.framework */; };
 		C4FE550324E4054700E25AA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FE550224E4054700E25AA4 /* AppDelegate.swift */; };
 		C4FE550524E4054700E25AA4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FE550424E4054700E25AA4 /* SceneDelegate.swift */; };
 		C4FE550724E4054700E25AA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FE550624E4054700E25AA4 /* ViewController.swift */; };
 		C4FE550A24E4054700E25AA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4FE550824E4054700E25AA4 /* Main.storyboard */; };
 		C4FE550C24E4054800E25AA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4FE550B24E4054800E25AA4 /* Assets.xcassets */; };
 		C4FE550F24E4054800E25AA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4FE550D24E4054800E25AA4 /* LaunchScreen.storyboard */; };
+		C4FE551724E4065B00E25AA4 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FE551624E4065B00E25AA4 /* K.swift */; };
+		C4FE551924E4066400E25AA4 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FE551824E4066400E25AA4 /* SettingViewController.swift */; };
+		C4FE551C24E409E900E25AA4 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = C4FE551B24E409E900E25AA4 /* SwiftSoup */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6D5113120A7E6E5FBF644C2F /* Pods-RandomFood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomFood.release.xcconfig"; path = "Target Support Files/Pods-RandomFood/Pods-RandomFood.release.xcconfig"; sourceTree = "<group>"; };
+		720460AC8953446B5F99E78B /* Pods_RandomFood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomFood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1070DD458099F4F3106010F /* Pods-RandomFood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomFood.debug.xcconfig"; path = "Target Support Files/Pods-RandomFood/Pods-RandomFood.debug.xcconfig"; sourceTree = "<group>"; };
 		C4FE54FF24E4054700E25AA4 /* RandomFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4FE550224E4054700E25AA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4FE550424E4054700E25AA4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,8 @@
 		C4FE550B24E4054800E25AA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4FE550E24E4054800E25AA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4FE551024E4054800E25AA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4FE551624E4065B00E25AA4 /* K.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
+		C4FE551824E4066400E25AA4 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +40,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A9E16325A9C008C96914299 /* Pods_RandomFood.framework in Frameworks */,
+				C4FE551C24E409E900E25AA4 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27EB20D35596C3E8AAD818FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C1070DD458099F4F3106010F /* Pods-RandomFood.debug.xcconfig */,
+				6D5113120A7E6E5FBF644C2F /* Pods-RandomFood.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C4FE54F624E4054700E25AA4 = {
 			isa = PBXGroup;
 			children = (
 				C4FE550124E4054700E25AA4 /* RandomFood */,
 				C4FE550024E4054700E25AA4 /* Products */,
+				27EB20D35596C3E8AAD818FC /* Pods */,
+				F9A31258D7E62700C9306353 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +78,8 @@
 		C4FE550124E4054700E25AA4 /* RandomFood */ = {
 			isa = PBXGroup;
 			children = (
+				C4FE551824E4066400E25AA4 /* SettingViewController.swift */,
+				C4FE551624E4065B00E25AA4 /* K.swift */,
 				C4FE550224E4054700E25AA4 /* AppDelegate.swift */,
 				C4FE550424E4054700E25AA4 /* SceneDelegate.swift */,
 				C4FE550624E4054700E25AA4 /* ViewController.swift */,
@@ -67,6 +91,14 @@
 			path = RandomFood;
 			sourceTree = "<group>";
 		};
+		F9A31258D7E62700C9306353 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				720460AC8953446B5F99E78B /* Pods_RandomFood.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,15 +106,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4FE551324E4054800E25AA4 /* Build configuration list for PBXNativeTarget "RandomFood" */;
 			buildPhases = (
+				DB868A277B80A192DEE0062E /* [CP] Check Pods Manifest.lock */,
 				C4FE54FB24E4054700E25AA4 /* Sources */,
 				C4FE54FC24E4054700E25AA4 /* Frameworks */,
 				C4FE54FD24E4054700E25AA4 /* Resources */,
+				5C53089726D4BB62228A58EB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = RandomFood;
+			packageProductDependencies = (
+				C4FE551B24E409E900E25AA4 /* SwiftSoup */,
+			);
 			productName = RandomFood;
 			productReference = C4FE54FF24E4054700E25AA4 /* RandomFood.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +148,9 @@
 				Base,
 			);
 			mainGroup = C4FE54F624E4054700E25AA4;
+			packageReferences = (
+				C4FE551A24E409E900E25AA4 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			productRefGroup = C4FE550024E4054700E25AA4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -133,12 +173,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5C53089726D4BB62228A58EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RandomFood/Pods-RandomFood-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RandomFood/Pods-RandomFood-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RandomFood/Pods-RandomFood-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB868A277B80A192DEE0062E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RandomFood-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C4FE54FB24E4054700E25AA4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4FE551924E4066400E25AA4 /* SettingViewController.swift in Sources */,
 				C4FE550724E4054700E25AA4 /* ViewController.swift in Sources */,
+				C4FE551724E4065B00E25AA4 /* K.swift in Sources */,
 				C4FE550324E4054700E25AA4 /* AppDelegate.swift in Sources */,
 				C4FE550524E4054700E25AA4 /* SceneDelegate.swift in Sources */,
 			);
@@ -216,7 +300,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +354,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -282,6 +366,7 @@
 		};
 		C4FE551424E4054800E25AA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1070DD458099F4F3106010F /* Pods-RandomFood.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +385,7 @@
 		};
 		C4FE551524E4054800E25AA4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D5113120A7E6E5FBF644C2F /* Pods-RandomFood.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -338,6 +424,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C4FE551A24E409E900E25AA4 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C4FE551B24E409E900E25AA4 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4FE551A24E409E900E25AA4 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C4FE54F724E4054700E25AA4 /* Project object */;
 }

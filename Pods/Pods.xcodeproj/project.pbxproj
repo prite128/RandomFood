@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2744447A1042C62F82958FCD67C7196D /* SimpleCheckbox-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B6CB66A0E425F1D61220AC7BF6977A7 /* SimpleCheckbox-dummy.m */; };
+		5D68BCEA2A755046D8BD273530420244 /* SimpleCheckbox-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3157E1A4A7E069B21A9F1F5A0321E0C7 /* SimpleCheckbox-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7243906B0EE5CD0EBFB9B988FAA534A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		9D45AD6B7F0738B1829BED0A855C6708 /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEC942BF2554B76DDB62C3497C01025 /* Checkbox.swift */; };
+		E57CEB714A0596AA74E1EFD0B89B48C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		ED1193D111E5ABF43B038EE8829AE60E /* Pods-RandomFood-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 595D0BE112F0396C19547D97645ABED5 /* Pods-RandomFood-dummy.m */; };
+		FA3277EEA5C106402DE660FE10DC4E88 /* Pods-RandomFood-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ABA7C5F5217DBAC88118BFE48E1BE32E /* Pods-RandomFood-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DFC045B0598BA9666CAF66EE0188D003 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F26A321F30138437FC03D69FB018CC0A;
+			remoteInfo = SimpleCheckbox;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1666185F1C1017F7E2106BC3A424836B /* Pods-RandomFood-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RandomFood-Info.plist"; sourceTree = "<group>"; };
+		1B6CB66A0E425F1D61220AC7BF6977A7 /* SimpleCheckbox-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SimpleCheckbox-dummy.m"; sourceTree = "<group>"; };
+		28987637794142ABC9C424C8F6EFE6A9 /* Pods-RandomFood-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RandomFood-acknowledgements.plist"; sourceTree = "<group>"; };
+		3157E1A4A7E069B21A9F1F5A0321E0C7 /* SimpleCheckbox-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleCheckbox-umbrella.h"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		39F1A0AE8A01B577D4B8EAB8EEC1D1A8 /* SimpleCheckbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SimpleCheckbox.framework; path = SimpleCheckbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		560CB027FA0F1FEDE05CF33EDB94AE30 /* SimpleCheckbox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimpleCheckbox.release.xcconfig; sourceTree = "<group>"; };
+		595D0BE112F0396C19547D97645ABED5 /* Pods-RandomFood-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RandomFood-dummy.m"; sourceTree = "<group>"; };
+		93BBD2E902628BFE7D40F38832B59A9E /* SimpleCheckbox-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleCheckbox-prefix.pch"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E91212C10914AC46748A1E0B9137670 /* SimpleCheckbox.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SimpleCheckbox.modulemap; sourceTree = "<group>"; };
+		9EEC942BF2554B76DDB62C3497C01025 /* Checkbox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Checkbox.swift; path = checkbox/Checkbox.swift; sourceTree = "<group>"; };
+		ABA7C5F5217DBAC88118BFE48E1BE32E /* Pods-RandomFood-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RandomFood-umbrella.h"; sourceTree = "<group>"; };
+		AE1C41F0BADCC33D61BAA651F4BBF076 /* SimpleCheckbox-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SimpleCheckbox-Info.plist"; sourceTree = "<group>"; };
+		AE678CD59FC8A706DFA7327B3B1F9147 /* Pods-RandomFood-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RandomFood-frameworks.sh"; sourceTree = "<group>"; };
+		BF082415EFC3A41A36E391F0AE240089 /* Pods-RandomFood.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RandomFood.modulemap"; sourceTree = "<group>"; };
+		C2898A68DB4F79D71DA7A820778ED859 /* Pods_RandomFood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RandomFood.framework; path = "Pods-RandomFood.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C511E03F66D652B5A5780B7A9C8F74DA /* Pods-RandomFood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RandomFood.debug.xcconfig"; sourceTree = "<group>"; };
+		C988FF0173D43532A2F5854122858157 /* Pods-RandomFood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RandomFood.release.xcconfig"; sourceTree = "<group>"; };
+		E4B06C6B7EF87D45C7C78D533205AA71 /* SimpleCheckbox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimpleCheckbox.debug.xcconfig; sourceTree = "<group>"; };
+		F2576C84E4B8447B0E6695932D249E20 /* Pods-RandomFood-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RandomFood-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2F54C0DC0BBCFD7CEABC94B606C0050 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7243906B0EE5CD0EBFB9B988FAA534A4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D993A3FB707ED3707EA63AC54D0E6732 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E57CEB714A0596AA74E1EFD0B89B48C3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0CFCC3486D9C3AFBE003317F960DD828 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2898A68DB4F79D71DA7A820778ED859 /* Pods_RandomFood.framework */,
+				39F1A0AE8A01B577D4B8EAB8EEC1D1A8 /* SimpleCheckbox.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1E89FA6BFE88AA86E8B66D1198D6FC0 /* Pods-RandomFood */ = {
+			isa = PBXGroup;
+			children = (
+				BF082415EFC3A41A36E391F0AE240089 /* Pods-RandomFood.modulemap */,
+				F2576C84E4B8447B0E6695932D249E20 /* Pods-RandomFood-acknowledgements.markdown */,
+				28987637794142ABC9C424C8F6EFE6A9 /* Pods-RandomFood-acknowledgements.plist */,
+				595D0BE112F0396C19547D97645ABED5 /* Pods-RandomFood-dummy.m */,
+				AE678CD59FC8A706DFA7327B3B1F9147 /* Pods-RandomFood-frameworks.sh */,
+				1666185F1C1017F7E2106BC3A424836B /* Pods-RandomFood-Info.plist */,
+				ABA7C5F5217DBAC88118BFE48E1BE32E /* Pods-RandomFood-umbrella.h */,
+				C511E03F66D652B5A5780B7A9C8F74DA /* Pods-RandomFood.debug.xcconfig */,
+				C988FF0173D43532A2F5854122858157 /* Pods-RandomFood.release.xcconfig */,
+			);
+			name = "Pods-RandomFood";
+			path = "Target Support Files/Pods-RandomFood";
+			sourceTree = "<group>";
+		};
+		C017A26A95D632ABDC9D3DB395B5F820 /* SimpleCheckbox */ = {
+			isa = PBXGroup;
+			children = (
+				9EEC942BF2554B76DDB62C3497C01025 /* Checkbox.swift */,
+				DB5147F08D45C8667937E158C9ADED53 /* Support Files */,
+			);
+			name = SimpleCheckbox;
+			path = SimpleCheckbox;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				D23FE9CA96031C35C08AC116E279254A /* Pods */,
+				0CFCC3486D9C3AFBE003317F960DD828 /* Products */,
+				CFBB60D2462E4EAAE14AEFC01FFF80F2 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		CFBB60D2462E4EAAE14AEFC01FFF80F2 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1E89FA6BFE88AA86E8B66D1198D6FC0 /* Pods-RandomFood */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D23FE9CA96031C35C08AC116E279254A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C017A26A95D632ABDC9D3DB395B5F820 /* SimpleCheckbox */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DB5147F08D45C8667937E158C9ADED53 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E91212C10914AC46748A1E0B9137670 /* SimpleCheckbox.modulemap */,
+				1B6CB66A0E425F1D61220AC7BF6977A7 /* SimpleCheckbox-dummy.m */,
+				AE1C41F0BADCC33D61BAA651F4BBF076 /* SimpleCheckbox-Info.plist */,
+				93BBD2E902628BFE7D40F38832B59A9E /* SimpleCheckbox-prefix.pch */,
+				3157E1A4A7E069B21A9F1F5A0321E0C7 /* SimpleCheckbox-umbrella.h */,
+				E4B06C6B7EF87D45C7C78D533205AA71 /* SimpleCheckbox.debug.xcconfig */,
+				560CB027FA0F1FEDE05CF33EDB94AE30 /* SimpleCheckbox.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SimpleCheckbox";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		342F777715B2FF2D851C0C1765AD40E2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA3277EEA5C106402DE660FE10DC4E88 /* Pods-RandomFood-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E952BA2EEBA15D6F202E0A18F30D0A41 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D68BCEA2A755046D8BD273530420244 /* SimpleCheckbox-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9C95001D9BD6268BE0B0BCA5D21BD346 /* Pods-RandomFood */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65C19B3A6EB2B70817F3B8CCFC6DC6CB /* Build configuration list for PBXNativeTarget "Pods-RandomFood" */;
+			buildPhases = (
+				342F777715B2FF2D851C0C1765AD40E2 /* Headers */,
+				EB77EBCF2DD3C92B99B48478840AD696 /* Sources */,
+				D993A3FB707ED3707EA63AC54D0E6732 /* Frameworks */,
+				736501287BC20E4A9CF2D5448D726B2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A90E660FC37DBDC8D6F8AB27C29EC654 /* PBXTargetDependency */,
+			);
+			name = "Pods-RandomFood";
+			productName = "Pods-RandomFood";
+			productReference = C2898A68DB4F79D71DA7A820778ED859 /* Pods_RandomFood.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F26A321F30138437FC03D69FB018CC0A /* SimpleCheckbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 841A0080888A622A69AD866366D95D96 /* Build configuration list for PBXNativeTarget "SimpleCheckbox" */;
+			buildPhases = (
+				E952BA2EEBA15D6F202E0A18F30D0A41 /* Headers */,
+				A50050EE8AB58ABEC3D355B330998BC0 /* Sources */,
+				D2F54C0DC0BBCFD7CEABC94B606C0050 /* Frameworks */,
+				572D84B95AD38D2B050302493A1899E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleCheckbox;
+			productName = SimpleCheckbox;
+			productReference = 39F1A0AE8A01B577D4B8EAB8EEC1D1A8 /* SimpleCheckbox.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 0CFCC3486D9C3AFBE003317F960DD828 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9C95001D9BD6268BE0B0BCA5D21BD346 /* Pods-RandomFood */,
+				F26A321F30138437FC03D69FB018CC0A /* SimpleCheckbox */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		572D84B95AD38D2B050302493A1899E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		736501287BC20E4A9CF2D5448D726B2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A50050EE8AB58ABEC3D355B330998BC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D45AD6B7F0738B1829BED0A855C6708 /* Checkbox.swift in Sources */,
+				2744447A1042C62F82958FCD67C7196D /* SimpleCheckbox-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB77EBCF2DD3C92B99B48478840AD696 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED1193D111E5ABF43B038EE8829AE60E /* Pods-RandomFood-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A90E660FC37DBDC8D6F8AB27C29EC654 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SimpleCheckbox;
+			target = F26A321F30138437FC03D69FB018CC0A /* SimpleCheckbox */;
+			targetProxy = DFC045B0598BA9666CAF66EE0188D003 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1422B121EAEAEA11307496903FA623C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		1C8CE366EFCD4910013158E38D2646EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4B06C6B7EF87D45C7C78D533205AA71 /* SimpleCheckbox.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SimpleCheckbox/SimpleCheckbox-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SimpleCheckbox/SimpleCheckbox-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SimpleCheckbox/SimpleCheckbox.modulemap";
+				PRODUCT_MODULE_NAME = SimpleCheckbox;
+				PRODUCT_NAME = SimpleCheckbox;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		486B2E2576DF48B0108483B46B366AB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 560CB027FA0F1FEDE05CF33EDB94AE30 /* SimpleCheckbox.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SimpleCheckbox/SimpleCheckbox-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SimpleCheckbox/SimpleCheckbox-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SimpleCheckbox/SimpleCheckbox.modulemap";
+				PRODUCT_MODULE_NAME = SimpleCheckbox;
+				PRODUCT_NAME = SimpleCheckbox;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5975EB12B9A491F9E741360AA2A0CDDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C988FF0173D43532A2F5854122858157 /* Pods-RandomFood.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RandomFood/Pods-RandomFood-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RandomFood/Pods-RandomFood.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E592D9F28A9832819966AB1769C74E99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C511E03F66D652B5A5780B7A9C8F74DA /* Pods-RandomFood.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RandomFood/Pods-RandomFood-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RandomFood/Pods-RandomFood.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ED7888FA6713EABBF66D26A8003AD1CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED7888FA6713EABBF66D26A8003AD1CA /* Debug */,
+				1422B121EAEAEA11307496903FA623C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65C19B3A6EB2B70817F3B8CCFC6DC6CB /* Build configuration list for PBXNativeTarget "Pods-RandomFood" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E592D9F28A9832819966AB1769C74E99 /* Debug */,
+				5975EB12B9A491F9E741360AA2A0CDDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		841A0080888A622A69AD866366D95D96 /* Build configuration list for PBXNativeTarget "SimpleCheckbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C8CE366EFCD4910013158E38D2646EF /* Debug */,
+				486B2E2576DF48B0108483B46B366AB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

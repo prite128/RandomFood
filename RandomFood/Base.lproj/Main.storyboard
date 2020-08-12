@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="soK-vg-o3q">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,340 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="testWebData" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="115" translatesAutoresizingMaskIntoConstraints="NO" id="czj-ln-b2e">
+                                <rect key="frame" x="107" y="368.5" width="200" height="159"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgk-u5-0PE">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="0.0"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="N9b-1r-kf9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tmp-Fb-K5f">
+                                        <rect key="frame" x="0.0" y="115" width="200" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <state key="normal" title="Press"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oNF-gD-UOt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="czj-ln-b2e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E0R-g6-oNn"/>
+                            <constraint firstItem="czj-ln-b2e" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Um6-gg-YOD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="5ka-kj-GAb">
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="Hf6-1c-EgR">
+                            <connections>
+                                <action selector="editButtonPressed:" destination="BYZ-38-t0r" id="3KJ-Rg-9fh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="shopLabel" destination="sgk-u5-0PE" id="GpQ-NK-WJ8"/>
+                        <segue destination="BNg-3W-aLb" kind="show" identifier="MainToSettingSegue" id="zXW-Jq-x3t"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="84.375"/>
+        </scene>
+        <!--Setting View Controller-->
+        <scene sceneID="hnq-sP-FIh">
+            <objects>
+                <viewController id="BNg-3W-aLb" customClass="SettingViewController" customModule="testWebData" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pLh-ew-t4i">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="pEP-Z4-FtB">
+                                <rect key="frame" x="16" y="277.5" width="382" height="341"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="สัญชาติอาหาร" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KdT-e4-vjJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="146" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="otv-Cz-U6w">
+                                        <rect key="frame" x="0.0" y="49" width="382" height="90"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="4f3-Lr-Cum">
+                                                <rect key="frame" x="0.0" y="0.0" width="382" height="30"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="P3l-hU-BpY">
+                                                        <rect key="frame" x="0.0" y="0.0" width="170" height="30"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="อาหารไทย" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epT-Ju-qmp">
+                                                                <rect key="frame" x="0.0" y="0.0" width="130" height="30"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="ZBz-RT-GKo"/>
+                                                                    <constraint firstAttribute="height" constant="30" id="ePJ-rB-mc8"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ggY-cP-lfr" userLabel="CheckboxThai" customClass="Checkbox" customModule="SimpleCheckbox">
+                                                                <rect key="frame" x="140" y="0.0" width="30" height="30"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="30" id="Vh4-bl-Ps3"/>
+                                                                    <constraint firstAttribute="height" constant="30" id="qji-si-xTx"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5QU-R0-enb">
+                                                        <rect key="frame" x="212" y="0.0" width="170" height="30"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="อาหารญี่ปุ่น" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZI-Jl-w4u">
+                                                                <rect key="frame" x="0.0" y="0.0" width="130" height="30"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="30" id="4tJ-yD-fWJ"/>
+                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="6SX-b7-tHD"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Le7-qc-pTd" userLabel="checkboxJapan" customClass="Checkbox" customModule="SimpleCheckbox">
+                                                                <rect key="frame" x="140" y="0.0" width="30" height="30"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="30" id="Uml-tF-z0z"/>
+                                                                    <constraint firstAttribute="height" constant="30" id="iae-Fb-cqe"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="trx-5K-Awk">
+                                                <rect key="frame" x="0.0" y="60" width="170" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="อาหารจีน" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRM-5U-niS">
+                                                        <rect key="frame" x="0.0" y="0.0" width="130" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="Z5M-lW-qQ8"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="dXl-zz-Z89"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JO5-2s-S5D" userLabel="checkboxChiness" customClass="Checkbox" customModule="SimpleCheckbox">
+                                                        <rect key="frame" x="140" y="0.0" width="30" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="30" id="cu0-jR-JAL"/>
+                                                            <constraint firstAttribute="height" constant="30" id="iW2-em-AsO"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ประเภทอาหาร" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4z-wA-YWS">
+                                        <rect key="frame" x="0.0" y="158" width="147" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="Vwx-1K-wy2">
+                                        <rect key="frame" x="0.0" y="207" width="382" height="134"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="KQW-oz-6W6">
+                                                <rect key="frame" x="0.0" y="0.0" width="382" height="30"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="x28-Rw-4en">
+                                                        <rect key="frame" x="0.0" y="0.0" width="170" height="30"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ก๋วยเตี๋ยว" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B8d-25-Xle">
+                                                                <rect key="frame" x="0.0" y="0.0" width="130" height="30"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="aFa-qK-UzU"/>
+                                                                    <constraint firstAttribute="height" constant="30" id="vUA-YS-iVg"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PyJ-np-4xf" customClass="Checkbox" customModule="SimpleCheckbox">
+                                                                <rect key="frame" x="140" y="0.0" width="30" height="30"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="30" id="RYd-yP-FXb"/>
+                                                                    <constraint firstAttribute="width" constant="30" id="hIv-fh-f7m"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Bix-y8-0TC">
+                                                        <rect key="frame" x="212" y="0.0" width="170" height="30"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="อาหารตามสั่ง" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mRS-34-aDc">
+                                                                <rect key="frame" x="0.0" y="0.0" width="130" height="30"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="eIL-LF-9BY"/>
+                                                                    <constraint firstAttribute="height" constant="30" id="oVs-M2-vNS"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I2H-2h-mQH" customClass="Checkbox" customModule="SimpleCheckbox">
+                                                                <rect key="frame" x="140" y="0.0" width="30" height="30"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="30" id="Ax9-xN-zZa"/>
+                                                                    <constraint firstAttribute="height" constant="30" id="otv-bB-eGs"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="ywa-QK-Xl3">
+                                                <rect key="frame" x="0.0" y="52" width="382" height="30"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fRu-yF-3P9">
+                                                        <rect key="frame" x="0.0" y="0.0" width="170" height="30"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ฟาสต์ฟู้ด" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2y-N0-leu">
+                                                                <rect key="frame" x="0.0" y="0.0" width="130" height="30"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="30" id="NdG-D1-Vqr"/>
+                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="b7u-Wi-KiC"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ttP-Wa-kjN" customClass="Checkbox" customModule="SimpleCheckbox">
+                                                                <rect key="frame" x="140" y="0.0" width="30" height="30"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="30" id="0s8-Qe-60Q"/>
+                                                                    <constraint firstAttribute="height" constant="30" id="jCd-0w-owu"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xU7-ay-ucQ">
+                                                        <rect key="frame" x="212" y="0.0" width="170" height="30"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="อาหารจานเดียว" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91F-7F-1mc">
+                                                                <rect key="frame" x="0.0" y="0.0" width="130" height="30"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="Qp6-ho-Z58"/>
+                                                                    <constraint firstAttribute="height" constant="30" id="jJe-S5-fVM"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="etd-gx-9Ul" customClass="Checkbox" customModule="SimpleCheckbox">
+                                                                <rect key="frame" x="140" y="0.0" width="30" height="30"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="30" id="4nw-dl-hDz"/>
+                                                                    <constraint firstAttribute="width" constant="30" id="6kN-pZ-IEj"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="d5B-p9-70W">
+                                                <rect key="frame" x="0.0" y="104" width="170" height="30"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zF3-Y1-B7s">
+                                                        <rect key="frame" x="0.0" y="0.0" width="170" height="30"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="อาหารคลีน" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ue9-LD-wWW">
+                                                                <rect key="frame" x="0.0" y="0.0" width="130" height="30"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="30" id="AYh-mE-W6t"/>
+                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="W3A-8n-j7R"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g3f-AP-ndD" customClass="Checkbox" customModule="SimpleCheckbox">
+                                                                <rect key="frame" x="140" y="0.0" width="30" height="30"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="30" id="Vht-sN-fAL"/>
+                                                                    <constraint firstAttribute="width" constant="30" id="pLh-G5-bAZ"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C0L-Sp-9Np">
+                                <rect key="frame" x="152" y="679" width="111" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="buttonSavePressed:" destination="BNg-3W-aLb" eventType="touchUpInside" id="DsM-XV-Dvq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="C0L-Sp-9Np" firstAttribute="top" secondItem="pEP-Z4-FtB" secondAttribute="bottom" constant="60.5" id="Fbb-at-Ied"/>
+                            <constraint firstItem="pEP-Z4-FtB" firstAttribute="centerY" secondItem="pLh-ew-t4i" secondAttribute="centerY" id="GuH-6b-Y04"/>
+                            <constraint firstItem="Mri-Lc-OoU" firstAttribute="trailing" secondItem="C0L-Sp-9Np" secondAttribute="trailing" constant="151" id="SD6-EN-9Zc"/>
+                            <constraint firstItem="pEP-Z4-FtB" firstAttribute="centerX" secondItem="pLh-ew-t4i" secondAttribute="centerX" id="Vz0-c3-jMb"/>
+                            <constraint firstItem="C0L-Sp-9Np" firstAttribute="leading" secondItem="Mri-Lc-OoU" secondAttribute="leading" constant="152" id="nQD-OQ-Koi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Mri-Lc-OoU"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vQ3-7S-fGY"/>
+                    <connections>
+                        <outlet property="checkBoxCleanFood" destination="g3f-AP-ndD" id="JDF-6Y-wdl"/>
+                        <outlet property="checkboxByOrder" destination="I2H-2h-mQH" id="ICh-IP-eQh"/>
+                        <outlet property="checkboxChiness" destination="JO5-2s-S5D" id="sy6-Kj-fT7"/>
+                        <outlet property="checkboxFastFood" destination="ttP-Wa-kjN" id="r6p-Ri-z8q"/>
+                        <outlet property="checkboxJapan" destination="Le7-qc-pTd" id="nGF-gu-vEN"/>
+                        <outlet property="checkboxNoodle" destination="PyJ-np-4xf" id="trl-do-6Ph"/>
+                        <outlet property="checkboxSigleMeal" destination="etd-gx-9Ul" id="COc-gd-qU6"/>
+                        <outlet property="checkboxThai" destination="ggY-cP-lfr" id="uue-0p-60z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QIA-iP-Pxr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2333.3333333333335" y="82.366071428571431"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tnP-Cv-Ohh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="soK-vg-o3q" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KUW-UL-Gdr">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="zea-O5-0yF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Lo-a0-3GT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="84.375"/>
         </scene>
     </scenes>
 </document>
