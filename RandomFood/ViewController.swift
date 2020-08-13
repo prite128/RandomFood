@@ -23,6 +23,9 @@ class ViewController: UIViewController  , SettingFillterDelegate {
     @IBOutlet weak var shopLabel: UILabel!
     
     var isCheckedBox: [Int]?
+    var isButton : Bool = false
+    
+    @IBOutlet weak var buttonPress: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +35,9 @@ class ViewController: UIViewController  , SettingFillterDelegate {
         locationManger.requestWhenInUseAuthorization()
         locationManger.requestLocation()
         
+        buttonPress.isEnabled   =   false
         
+        showAlert(with: isButton)
         //        passUrl()
     }
     
@@ -103,6 +108,12 @@ class ViewController: UIViewController  , SettingFillterDelegate {
                                     print(try element.text())
                                     self.shopNames.append(try element.text())
                                     
+                                    
+                                    
+                                    DispatchQueue.main.sync {
+                                        self.buttonPress.isEnabled   =   true
+                                    }
+                                    
                                 }
                                 
                             }
@@ -121,12 +132,28 @@ class ViewController: UIViewController  , SettingFillterDelegate {
         
     }
     
+    func showAlert(with isButton : Bool = false ){
+        
+        if isButton ==  false {
+            let alert   =   UIAlertController(title: "Please wait unitl button can press ", message: "", preferredStyle: .alert)
+            
+            let action  =   UIAlertAction(title: "Ok", style: .default)
+            
+            alert.addAction(action)
+            
+            present(alert, animated: true, completion: nil)
+        }
+        
+    }
+    
+    
     func didUpdateFillter(urlFillter: String  , isCheckedBox: [Int] ) {
         
         passUrl(with: urlFillter)
         
         self.isCheckedBox   =   isCheckedBox
         
+        isButton    =   true
     }
     
     

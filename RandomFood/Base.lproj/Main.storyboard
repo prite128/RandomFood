@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="testWebData" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RandomFood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,7 +30,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tmp-Fb-K5f">
                                         <rect key="frame" x="0.0" y="115" width="200" height="44"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                        <state key="normal" title="Press"/>
+                                        <state key="normal" title="Random"/>
                                         <connections>
                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oNF-gD-UOt"/>
                                         </connections>
@@ -53,6 +53,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="buttonPress" destination="tmp-Fb-K5f" id="FeH-HD-rg6"/>
                         <outlet property="shopLabel" destination="sgk-u5-0PE" id="GpQ-NK-WJ8"/>
                         <segue destination="BNg-3W-aLb" kind="show" identifier="MainToSettingSegue" id="zXW-Jq-x3t"/>
                     </connections>
@@ -64,7 +65,7 @@
         <!--Setting View Controller-->
         <scene sceneID="hnq-sP-FIh">
             <objects>
-                <viewController id="BNg-3W-aLb" customClass="SettingViewController" customModule="testWebData" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BNg-3W-aLb" customClass="SettingViewController" customModule="RandomFood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pLh-ew-t4i">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
